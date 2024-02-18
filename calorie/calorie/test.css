@@ -1,0 +1,11 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+
+.calorie-calculator {
+    width: 100%;
+    margin-left: 25%;
+}
+
+

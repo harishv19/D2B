@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance Calorie Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="calorie-calculator">
+  <h2>Maintenance Calorie Calculator</h2>
+  <div class="calorie-form">
+    <label for="weight">Weight (in kg):</label>
+    <input type="number" id="weight" placeholder="Enter weight" min="0" step="0.1">
+    <label for="height">Height (in cm):</label>
+    <input type="number" id="height" placeholder="Enter height" min="0" step="0.1">
+    <label for="age">Age (in years):</label>
+    <input type="number" id="age" placeholder="Enter age" min="0">
+    <label for="gender">Gender:</label>
+    <select id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <label for="activity-level">Activity Level:</label>
+    <select id="activity-level">
+      <option value="sedentary">Sedentary (little or no exercise)</option>
+      <option value="lightly-active">Lightly active (exercise 1-3 days/week)</option>
+      <option value="moderately-active">Moderately active (exercise 3-5 days/week)</option>
+      <option value="very-active">Very active (exercise 6-7 days/week)</option>
+      <option value="extra-active">Extra active (very hard exercise, physical job, or training twice a day)</option>
+    </select>
+    <button onclick="calculateMaintenance()">Calculate</button>
+  </div>
+  <div id="maintenance-result"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
